@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #89f7fe, #f266ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #00000033;
+}
+
+.converter input,
+.converter select {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.converter input:focus,
+.converter select:focus {
+  box-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+.result {
+  text-align: left;
+  margin-top: 1.5rem;
+  color: #fff;
+}
+
+.result p {
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 3px #00000033;
+}
